@@ -4,6 +4,8 @@
 
 ### Features
 
+- Add new drugs
+- Add new specialties
 - Create account (medic, patient)
 - Patient can see all specialities in the platform
 - Patient can search for medics by specialty
