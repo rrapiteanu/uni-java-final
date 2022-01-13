@@ -27,7 +27,9 @@
 - PrescriptionItem
 
 ### Swagger
-
 http://localhost:8080/swagger-ui/
+![swagger](https://user-images.githubusercontent.com/18491327/149407058-96b183f9-c2fd-4e7d-ad5b-a7aa61350d28.png)
 
 ### ERD
+![erd](https://user-images.githubusercontent.com/18491327/149407141-bb4fdafb-9aa8-4b82-8725-7feb81edb0be.png)
+
