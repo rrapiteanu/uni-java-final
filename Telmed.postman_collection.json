@@ -1,0 +1,503 @@
+{
+	"info": {
+		"_postman_id": "d441b8fd-262b-4802-b5e3-817f9af62c9e",
+		"name": "Telmed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MEDICAMENTE - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"denumire\": \"Paracetamol\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medicamente/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicamente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEDICAMENTE - GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medicamente/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicamente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEDICAMENTE - GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medicamente/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicamente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPECIALTIES - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"denumire\": \"Cardiologie\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/specialties/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"specialties",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPECIALTIES - GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/specialties/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"specialties",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SPECIALTIES - GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/specialties/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"specialties",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEDICS - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Medic Prenume\",\r\n    \"lastName\": \"Medic Nume\",\r\n    \"email\": \"medic@gmail.com\",\r\n    \"specialtyId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medics/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEDICS - GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medics/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEDICS - GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medics/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medics",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEDICS - GET BY SPECIALTY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/specialties/1/medics",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"specialties",
+						"1",
+						"medics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATIENTS - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Pacient Prenume\",\r\n    \"lastName\": \"Pacient Nume\",\r\n    \"email\": \"pacient@gmail.com\",\r\n    \"height\": 180,\r\n    \"weight\": 80,\r\n    \"gender\": \"MALE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pacienti",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacienti"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATIENTS - GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacienti",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacienti"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATIENTS - GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacienti/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacienti",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONVERSATIONS - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pacientId\": 1,\r\n    \"medicId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/conversations/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversations",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONVERSATIONS - ADD NEW MESSAGE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Buna ziua\",\r\n    \"authorId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/conversations/1/new_message",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversations",
+						"1",
+						"new_message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONVERSATIONS - GET ALL BY MEDIC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/conversations/medics/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversations",
+						"medics",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONVERSATIONS - GET ALL BY PATIENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/conversations/pacienti/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversations",
+						"pacienti",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONVERSATIONS - GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/conversations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRESCRIPTIONS - CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pacientId\": 1,\r\n    \"medicId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prescriptions/new",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescriptions",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRESCRIPTIONS - ADD NEW ITEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"medicamentId\": 1,\r\n    \"days\": 10,\r\n    \"quantity\": 2,\r\n    \"interval\": 24 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prescriptions/1/new_entry",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescriptions",
+						"1",
+						"new_entry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRESCRIPTIONS - GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/prescriptions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescriptions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRESCRIPTIONS - GET BY PATIENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/prescriptions/pacienti/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescriptions",
+						"pacienti",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
